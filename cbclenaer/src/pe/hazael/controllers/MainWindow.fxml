@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.hazael.controllers.MainWindowController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Inicio">
+              <items>
+                  <Menu mnemonicParsing="false" text="Vistas">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Dashboard" />
+                        <MenuItem mnemonicParsing="false" text="Cuentas" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Caja" />
+                  <MenuItem mnemonicParsing="false" text="Salir" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Almacen">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showProducts" text="Productos" />
+                  <MenuItem mnemonicParsing="false" text="Insumos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Produccion">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Lista de Materiales" />
+                  <MenuItem mnemonicParsing="false" text="Medidas" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Ventas">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#showCustomers" text="Clientes" />
+                  <MenuItem mnemonicParsing="false" text="Ordenes de Venta" />
+                  <MenuItem mnemonicParsing="false" text="Ventas" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Compras">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Proveedores" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Configuraciones">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Empresa" />
+                  <MenuItem mnemonicParsing="false" text="Vendedores" />
+                  <MenuItem mnemonicParsing="false" text="Cuentas Bancarias" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showAbout" text="Acerca de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox prefHeight="35.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

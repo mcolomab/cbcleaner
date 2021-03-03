@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.hazael.controllers.LoginController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="280.0" style="-fx-background-color: #3C7384;" />
+      <TextField fx:id="txtUsername" layoutX="320.0" layoutY="140.0" prefHeight="36.0" prefWidth="240.0" promptText="Ingrese su usuario" />
+      <TextField fx:id="txtPassword" layoutX="320.0" layoutY="220.0" prefHeight="36.0" prefWidth="240.0" promptText="Ingrese su contraseña" />
+      <Label layoutX="320.0" layoutY="120.0" text="Usuario" textFill="#3c7384" />
+      <Label layoutX="320.0" layoutY="200.0" text="Contraseña" textFill="#3c7384" />
+      <Button fx:id="btnLogin" layoutX="320.0" layoutY="280.0" mnemonicParsing="false" onAction="#goLogin" prefHeight="45.0" prefWidth="240.0" style="-fx-background-color: #64C242;" text="Ingresar" textFill="#3c7384">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="355.0" layoutY="60.0" text="Iniciar Sesión" textFill="#3c7384">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
